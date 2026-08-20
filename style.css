@@ -87,6 +87,70 @@ ul {
     margin-bottom: 10px;
     color: #333333;
 }
+.activities-section {
+    background-color: #f7fafc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.activities-list {
+    padding-left: 25px;
+}
+
+.activity-item {
+    margin-bottom: 10px;
+    color: #333333;
+}
+.video-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.resume-video {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.audio-section {
+    background-color: #f7fafc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.resume-audio {
+    width: 100%;
+    max-width: 500px;
+}
+.education-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.education-table th,
+.education-table td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.education-table th {
+    background-color: #1a365d;
+    color: white;
+}
+
+.education-table tr:nth-child(even) {
+    background-color: #f7fafc;
+}
+
+
+
+
 
 
 
