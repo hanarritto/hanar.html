@@ -35,6 +35,21 @@ ul {
 }
 
 .section-title {
+    .languages-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.languages-list {
+    padding-left: 25px;
+}
+
+.language-item {
+    margin-bottom: 8px;
+    color: #333333;
+}
+
     color: #2b6cb0;
     border-bottom: 2px solid #e2e8f0;
     padding-bottom: 5px;
