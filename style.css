@@ -28,4 +28,20 @@ ul {
     color: white;
     font-size: 36px;
 }
+.personal-info {
+    background-color: #f7fafc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.section-title {
+    color: #2b6cb0;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 5px;
+}
+
+.info-text {
+    font-size: 16px;
+    color: #333333;
+}
 
