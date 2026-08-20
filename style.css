@@ -17,3 +17,15 @@ h2 {
 ul {
     list-style-type: square;
 }
+.header {
+    background-color: #1a365d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.cv-title {
+    color: white;
+    font-size: 36px;
+}
+
