@@ -59,4 +59,34 @@ ul {
     font-size: 16px;
     color: #333333;
 }
+.programming-section {
+    background-color: #f7fafc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.programming-list {
+    padding-left: 25px;
+}
+
+.programming-item {
+    margin-bottom: 8px;
+    color: #333333;
+}
+.projects-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.projects-list {
+    padding-left: 25px;
+}
+
+.project-item {
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+
 
