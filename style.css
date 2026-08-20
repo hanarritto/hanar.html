@@ -147,6 +147,61 @@ ul {
 .education-table tr:nth-child(even) {
     background-color: #f7fafc;
 }
+.contact-section {
+    background-color: #f7fafc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input,
+.form-textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #1a365d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #2b6cb0;
+}
+.footer {
+    background-color: #1a365d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-text {
+    margin: 5px;
+}
+
+
 
 
 
