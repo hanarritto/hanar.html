@@ -1,196 +1,437 @@
 <!DOCTYPE html>
-<!-- Defines the document type as HTML5 -->
 <html lang="en">
 
 <head>
-    <!-- Page title shown on the browser tab -->
-    <title>CV Hanar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Character encoding -->
-    <meta charset="UTF-8">
+  <title>CV Hanar</title>
 
-    <!-- Page description -->
-    <meta name="description" content="CV Hanar">
+  <meta name="description" content="CV Hanar">
+  <meta name="author" content="Hanar">
 
-    <!-- Keywords for search engines -->
-    <meta name="keywords" content="CV Hanar, Hanar, CV">
+  <!-- Bootstrap CSS Framework -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
 
-    <!-- Author information -->
-    <meta name="author" content="Hanar">
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  >
 
-    <!-- Responsive design for mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ลิงค์ไปไฟล์CSS -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-
 </head>
 
-<body>
+<body class="bg-light">
 
-    <!-- ซีเอสเอสคลาส -->
-    <header class="header">
-        <h1 class="cv-title">MY CV</h1>
-    </header>
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">MY CV</h1>
+      <p class="lead mb-0">Information Technology Student</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- Personal Information + Languages -->
+    <div class="row g-4">
+
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h2 class="h4 text-primary mb-3">
+              <i class="bi bi-person-circle"></i>
+              Personal Information
+            </h2>
+
+            <p><strong>Name:</strong> Hanar Ritto</p>
+            <p><strong>Major:</strong> Information Technology</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h2 class="h4 text-primary mb-3">
+              <i class="bi bi-translate"></i>
+              Languages Spoken
+            </h2>
+
+            <ul class="list-group">
+              <li class="list-group-item">
+                Thai
+                <span class="badge bg-primary float-end">Native</span>
+              </li>
+
+              <li class="list-group-item">
+                English
+                <span class="badge bg-secondary float-end">Intermediate</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 
-    <!-- Personal information section -->
-    <section class="personal-info">
-    <h2 class="section-title">Personal Information</h2>
+    <!-- Programming -->
+    <section class="card shadow-sm my-4">
+      <div class="card-body">
 
-    <p class="info-text">
-        <strong>Name:</strong> Hanar Ritto
-    </p>
+        <h2 class="h4 text-primary mb-3">
+          <i class="bi bi-code-slash"></i>
+          Programming Languages Used
+        </h2>
 
-    <p class="info-text">
-        <strong>Major:</strong> Computer Science / Information Technology
-    </p>
-</section>
+        <div class="row g-3">
 
-    <!-- Languages spoken section -->
-    <section class="languages-section">
-    <h2 class="section-title">Languages Spoken</h2>
+          <div class="col-md-4">
+            <div class="border rounded p-3 text-center">
+              <h5>HTML5 / CSS3</h5>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  style="width: 85%">
+                  85%
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <ul class="languages-list">
-        <li class="language-item">Thai (Native)</li>
-        <li class="language-item">English (Intermediate)</li>
-    </ul>
-</section>
+          <div class="col-md-4">
+            <div class="border rounded p-3 text-center">
+              <h5>JavaScript</h5>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success"
+                  style="width: 70%">
+                  70%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="border rounded p-3 text-center">
+              <h5>Python</h5>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-warning text-dark"
+                  style="width: 65%">
+                  65%
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
 
-    <!-- Programming languages section -->
-   <section class="programming-section">
-    <h2 class="section-title">Programming Languages Used</h2>
+    <!-- Projects -->
+    <section class="card shadow-sm my-4">
+      <div class="card-body">
 
-    <ul class="programming-list">
-        <li class="programming-item">HTML5 / CSS3</li>
-        <li class="programming-item">JavaScript</li>
-        <li class="programming-item">Python</li>
-    </ul>
-</section>
+        <h2 class="h4 text-primary mb-3">
+          <i class="bi bi-folder"></i>
+          Projects Completed
+        </h2>
+
+        <div class="row g-3">
+
+          <div class="col-md-6">
+            <div class="card h-100 border-primary">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Faculty Directory
+                </h5>
+
+                <p class="card-text">
+                  Fatoni University Lecturer Directory
+                  and Contact System.
+                </p>
+
+                <span class="badge bg-primary">
+                  Web Project
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-success">
+              <div class="card-body">
+
+                <h5 class="card-title">
+                  Personal Portfolio
+                </h5>
+
+                <p class="card-text">
+                  Personal portfolio and CV webpage
+                  created using HTML and CSS.
+                </p>
+
+                <span class="badge bg-success">
+                  Portfolio
+                </span>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
 
-    <!-- Completed projects section -->
-   <section class="projects-section">
-    <h2 class="section-title">Projects Completed</h2>
+    <!-- Activities -->
+    <section class="card shadow-sm my-4">
+      <div class="card-body">
 
-    <ul class="projects-list">
-        <li class="project-item">
-            Fatoni University Lecturer Directory and Contact System
-        </li>
+        <h2 class="h4 text-primary mb-3">
+          <i class="bi bi-people"></i>
+          Activities & Engagement
+        </h2>
 
-        <li class="project-item">
-            Personal Portfolio Webpage
-        </li>
-    </ul>
-</section>
+        <ul class="list-group list-group-flush">
 
-    <!-- Activities section -->
-   <section class="activities-section">
-    <h2 class="section-title">Activities & Engagement</h2>
-
-    <ul class="activities-list">
-        <li class="activity-item">
+          <li class="list-group-item">
             3D Site Layout & Event Planning Team Member
-        </li>
+          </li>
 
-        <li class="activity-item">
+          <li class="list-group-item">
             Community Apparel Design & Branding Workshop
-        </li>
-    </ul>
-</section>
-<section class="video-section">
-    <h2 class="section-title">My Introduction Video</h2>
+          </li>
 
-    <video class="resume-video" controls width="500">
-        <source src="introduction.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</section>
-    <section class="audio-section">
-    <h2 class="section-title">My Introduction Audio</h2>
+        </ul>
+      </div>
+    </section>
 
-    <audio class="resume-audio" controls>
-        <source src="introduction.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-</section>
-    <section class="education-section">
-    <h2 class="section-title">Education</h2>
 
-    <table class="education-table">
-        <tr>
-            <th>Year</th>
-            <th>Institution</th>
-            <th>Program</th>
-        </tr>
+    <!-- Video and Audio -->
+    <div class="row g-4 my-2">
 
-        <tr>
-            <td>2026</td>
-            <td>fatoni university</td>
-            <td>Computer Science</td>
-        </tr>
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
 
-        <tr>
-            <td>2025</td>
-            <td>fatoni university</td>
-            <td>Computer Science</td>
-        </tr>
-    </table>
-        <section class="contact-section">
-    <h2 class="section-title">Contact Me</h2>
+          <div class="card-body">
 
-    <form class="contact-form">
+            <h2 class="h4 text-primary mb-3">
+              <i class="bi bi-camera-video"></i>
+              My Introduction Video
+            </h2>
 
-        <label class="form-label" for="name">
-            Name:
-        </label>
+            <video
+              class="w-100 rounded"
+              controls>
 
-        <input class="form-input"
-               type="text"
-               id="name"
-               name="name"
-               placeholder="Enter your name">
+              <source
+                src="introduction.mp4"
+                type="video/mp4">
 
-        <label class="form-label" for="email">
-            Email:
-        </label>
+              Your browser does not support the video tag.
 
-        <input class="form-input"
-               type="email"
-               id="email"
-               name="email"
-               placeholder="Enter your email">
+            </video>
 
-        <label class="form-label" for="message">
-            Message:
-        </label>
+          </div>
+        </div>
+      </div>
 
-        <textarea class="form-textarea"
-                  id="message"
-                  name="message"
-                  rows="5"
-                  placeholder="Write your message"></textarea>
 
-        <button class="submit-button" type="submit">
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+
+          <div class="card-body">
+
+            <h2 class="h4 text-primary mb-3">
+              <i class="bi bi-mic"></i>
+              My Introduction Audio
+            </h2>
+
+            <audio
+              class="w-100"
+              controls>
+
+              <source
+                src="introduction.mp3"
+                type="audio/mpeg">
+
+              Your browser does not support the audio element.
+
+            </audio>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Education -->
+    <section class="card shadow-sm my-4">
+
+      <div class="card-body">
+
+        <h2 class="h4 text-primary mb-3">
+          <i class="bi bi-mortarboard"></i>
+          Education
+        </h2>
+
+        <div class="table-responsive">
+
+          <table class="table table-striped table-hover">
+
+            <thead class="table-primary">
+
+              <tr>
+                <th>Year</th>
+                <th>Institution</th>
+                <th>Program</th>
+              </tr>
+
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>2026</td>
+                <td>Fatoni University</td>
+                <td>Information Technology</td>
+              </tr>
+
+              <tr>
+                <td>2025</td>
+                <td>Fatoni University</td>
+                <td>Information Technology</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="card shadow-sm my-4">
+
+      <div class="card-body">
+
+        <h2 class="h4 text-primary mb-4">
+          <i class="bi bi-envelope"></i>
+          Contact Me
+        </h2>
+
+        <form>
+
+          <div class="mb-3">
+
+            <label
+              for="name"
+              class="form-label">
+
+              Name
+
+            </label>
+
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name">
+
+          </div>
+
+
+          <div class="mb-3">
+
+            <label
+              for="email"
+              class="form-label">
+
+              Email
+
+            </label>
+
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email">
+
+          </div>
+
+
+          <div class="mb-3">
+
+            <label
+              for="message"
+              class="form-label">
+
+              Message
+
+            </label>
+
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Write your message"></textarea>
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="btn btn-primary px-4">
+
+            <i class="bi bi-send"></i>
             Send Message
-        </button>
 
-    </form>
-</section>
+          </button>
 
-</section>
-<footer class="footer">
-    <p class="footer-text">
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+
+    <div class="container">
+
+      <p class="mb-1">
         &copy; 2026 Hanar. All Rights Reserved.
-    </p>
+      </p>
 
-    <p class="footer-text">
-        Email: hanar.ritto.email@example.com
-    </p>
-</footer>
+      <p class="mb-0">
+        CV Website using Bootstrap CSS Framework
+      </p>
+
+    </div>
+
+  </footer>
 
 
-
+  <!-- Bootstrap JavaScript -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
 
 </body>
 
