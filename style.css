@@ -200,8 +200,36 @@ ul {
 .footer-text {
     margin: 5px;
 }
+#goTopBtn {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  z-index: 1000;
+}#mainNav {
+  display: none;
+}
 
+#mainNav.show {
+  display: block;
+}
 
+@media (min-width: 992px) {
+  #mainNav {
+    display: block;
+  }
+}
+
+#mainNav .nav-link {
+  color: #0d6efd;
+  font-weight: 500;
+}
+
+#mainNav .nav-link:hover {
+  color: #084298;
+}
 
 
 
