@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CV Hanar</title>
+
+  <meta name="description" content="CV Hanar">
+  <meta name="author" content="Hanar">
+
+  <!-- Bootstrap CSS Framework -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  >
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+
+  <header class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold">MY CV</h1>
+    <p class="lead mb-0">
+      Information Technology Student
+    </p>
+    <p class="mt-3 mb-0">
+      Website Visitors:
+      <span id="visitorCount">0</span>
+    </p>
+  </div>
+</header>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+  <div class="container">
+
+    <button
+      id="menuToggle"
+      class="navbar-toggler"
+      type="button"
+      aria-label="Toggle navigation"
+      aria-expanded="false">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div id="mainNav" class="navbar-collapse">
+      <ul class="navbar-nav mx-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#personalInfo">
+            Personal Information
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#programming">
+            Programming
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">
+            Projects
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+  <main class="container my-5">
+
+    <!-- Personal Information + Languages -->
+    <div class="row g-4">
+
+      <div class="col-md-6" id="personalInfo">
+  <div class="card shadow-sm h-100">
+    <div class="card-body">
+
+      <h2 class="h4 text-primary mb-3">
+  <i class="bi bi-person-circle"></i>
+  Personal Information
+</h2>
+
+<img
+  src="profile.jpg"
+  alt="Hanar Ritto profile picture"
+  class="img-fluid rounded-circle mb-3"
+  width="150">
+
+<p><strong>Name:</strong> Hanar Ritto</p>
+<p><strong>Major:</strong> Information Technology</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h2 class="h4 text-primary mb-3">
+              <i class="bi bi-translate"></i>
+              Languages Spoken
+            </h2>
+
+            <ul class="list-group">
+              <li class="list-group-item">
+                Thai
+                <span class="badge bg-primary float-end">Native</span>
+              </li>
+
+              <li class="list-group-item">
+                English
+                <span class="badge bg-secondary float-end">Intermediate</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Programming -->
+    <section id="programming" class="card shadow-sm my-4">
+      <div class="card-body">
+
+        <h2 class="h4 text-primary mb-3">
+          <i class="bi bi-code-slash"></i>
+          Programming Languages Used
+        </h2>
+
+        <div class="row g-3">
+
+          <div class="col-md-4">
+            <div class="border rounded p-3 text-center">
+              <h5>HTML5 / CSS3</h5>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  style="width: 85%">
+                  85%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="border rounded p-3 text-center">
+              <h5>JavaScript</h5>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success"
+                  style="width: 70%">
+                  70%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="border rounded p-3 text-center">
+              <h5>Python</h5>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-warning text-dark"
+                  style="width: 65%">
+                  65%
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="card shadow-sm my-4">
+      <div class="card-body">
+
+        <h2 class="h4 text-primary mb-3">
+          <i class="bi bi-folder"></i>
+          Projects Completed
+        </h2>
+
+        <div class="row g-3">
+
+          <div class="col-md-6">
+            <div class="card h-100 border-primary">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Faculty Directory
+                </h5>
+
+                <p class="card-text">
+                  Fatoni University Lecturer Directory
+                  and Contact System.
+                </p>
+
+                <span class="badge bg-primary">
+                  Web Project
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-success">
+              <div class="card-body">
+
+                <h5 class="card-title">
+                  Personal Portfolio
+                </h5>
+
+                <p class="card-text">
+                  Personal portfolio and CV webpage
+                  created using HTML and CSS.
+                </p>
+
+                <span class="badge bg-success">
+                  Portfolio
+                </span>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Activities -->
+    <section class="card shadow-sm my-4">
+      <div class="card-body">
+
+        <h2 class="h4 text-primary mb-3">
+          <i class="bi bi-people"></i>
+          Activities & Engagement
+        </h2>
+
+        <ul class="list-group list-group-flush">
+
+          <li class="list-group-item">
+            3D Site Layout & Event Planning Team Member
+          </li>
+
+          <li class="list-group-item">
+            Community Apparel Design & Branding Workshop
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- Video and Audio -->
+    <div class="row g-4 my-2">
+
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+
+          <div class="card-body">
+
+            <h2 class="h4 text-primary mb-3">
+              <i class="bi bi-camera-video"></i>
+              My Introduction Video
+            </h2>
+
+            <video
+              class="w-100 rounded"
+              controls>
+
+              <source
+                src="introduction.mp4"
+                type="video/mp4">
+
+              Your browser does not support the video tag.
+
+            </video>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+
+          <div class="card-body">
+
+            <h2 class="h4 text-primary mb-3">
+              <i class="bi bi-mic"></i>
+              My Introduction Audio
+            </h2>
+
+            <audio
+              class="w-100"
+              controls>
+
+              <source
+                src="introduction.mp3"
+                type="audio/mpeg">
+
+              Your browser does not support the audio element.
+
+            </audio>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Education -->
+    <section class="card shadow-sm my-4">
+
+      <div class="card-body">
+
+        <h2 class="h4 text-primary mb-3">
+          <i class="bi bi-mortarboard"></i>
+          Education
+        </h2>
+
+        <div class="table-responsive">
+
+          <table class="table table-striped table-hover">
+
+            <thead class="table-primary">
+
+              <tr>
+                <th>Year</th>
+                <th>Institution</th>
+                <th>Program</th>
+              </tr>
+
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>2026</td>
+                <td>Fatoni University</td>
+                <td>Information Technology</td>
+              </tr>
+
+              <tr>
+                <td>2025</td>
+                <td>Fatoni University</td>
+                <td>Information Technology</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+      </div>
+
+    </section>
+
+<!-- Image Carousel -->
+<section class="card shadow-sm my-4">
+
+  <div class="card-body">
+
+    <h2 class="h4 text-primary mb-3">
+      <i class="bi bi-images"></i>
+      My Gallery
+    </h2>
+
+    <div id="cvCarousel" class="carousel slide">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img
+            src="introduction.jpg"
+            class="d-block w-100 rounded"
+            alt="Hanar introduction">
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="project.jpg"
+            class="d-block w-100 rounded"
+            alt="Hanar project">
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="activity.jpg"
+            class="d-block w-100 rounded"
+            alt="Hanar activity">
+        </div>
+
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#cvCarousel"
+        data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#cvCarousel"
+        data-bs-slide="next">
+
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+    <!-- Contact -->
+    <section id="contact" class="card shadow-sm my-4">
+
+      <div class="card-body">
+
+        <h2 class="h4 text-primary mb-4">
+          <i class="bi bi-envelope"></i>
+          Contact Me
+        </h2>
+
+        <form id="contactForm">
+
+          <div class="mb-3">
+
+            <label
+              for="name"
+              class="form-label">
+
+              Name
+
+            </label>
+
+            <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                pattern="[A-Za-zก-๙\s]{2,50}"
+                required
+                placeholder="Enter your name">
+
+          </div>
+
+
+          <div class="mb-3">
+
+            <label
+              for="email"
+              class="form-label">
+
+              Email
+
+            </label>
+
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              required
+              placeholder="Enter your email">
+
+          </div>
+
+
+          <div class="mb-3">
+
+            <label
+              for="message"
+              class="form-label">
+
+              Message
+
+            </label>
+
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="5"
+              required
+              minlength="10"
+              maxlength="500"
+              placeholder="Write your message"></textarea>
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="btn btn-primary px-4">
+
+            <i class="bi bi-send"></i>
+            Send Message
+
+          </button>
+            <p id="formStatus" class="mt-3"></p> 
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+<button
+  id="goTopBtn"
+  class="btn btn-primary rounded-circle"
+  title="Go to top"
+  aria-label="Go to top">
+
+  <i class="bi bi-arrow-up"></i>
+
+</button>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+
+    <div class="container">
+
+      <p class="mb-1">
+        &copy; 2026 Hanar. All Rights Reserved.
+      </p>
+
+      <p class="mb-0">
+        CV Website using Bootstrap CSS Framework
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Bootstrap JavaScript -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
