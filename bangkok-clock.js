@@ -10,17 +10,18 @@
 
   const apiUrl = "https://timeapi.io/api/Time/current/zone?timeZone=Asia%2FBangkok";
   const bangkokTimeZone = "Asia/Bangkok";
-  let fetchedTime = null;
-  let fetchedAt = null;
+  let currentBangkokTime = null;
 
-  function renderClock(date) {
+  function renderClock() {
+    if (!currentBangkokTime) return;
+
     timeElement.textContent = new Intl.DateTimeFormat("en-GB", {
       timeZone: bangkokTimeZone,
       hour: "2-digit",
       minute: "2-digit",
       second: "2-digit",
       hour12: false
-    }).format(date);
+    }).format(currentBangkokTime);
 
     dateElement.textContent = new Intl.DateTimeFormat("en-GB", {
       timeZone: bangkokTimeZone,
@@ -28,7 +29,7 @@
       day: "numeric",
       month: "long",
       year: "numeric"
-    }).format(date);
+    }).format(currentBangkokTime);
   }
 
   async function fetchBangkokTime() {
@@ -51,40 +52,41 @@
         throw new Error("The API response does not contain dateTime.");
       }
 
-      // TimeAPI.io returns Bangkok local dateTime without an offset.
-      // Bangkok uses UTC+07:00 and does not observe daylight saving time.
-      const apiDate = new Date(data.dateTime + "+07:00");
+      // Parse the API's Bangkok local dateTime as UTC+07:00.
+      const dateTimeValue = data.dateTime;
+      const hasOffset = /(?:Z|[+-]\\d{2}:?\\d{2})$/i.test(dateTimeValue);
+      const apiDate = new Date(hasOffset ? dateTimeValue : dateTimeValue + "+07:00");
 
       if (Number.isNaN(apiDate.getTime())) {
         throw new Error("The API returned an invalid dateTime value.");
       }
 
-      fetchedTime = apiDate.getTime();
-      fetchedAt = Date.now();
-
+      currentBangkokTime = apiDate;
       cityElement.textContent = "Bangkok, Thailand";
-      renderClock(new Date(fetchedTime));
+      renderClock();
       statusElement.textContent = "Updated from FetchAPI • Asia/Bangkok";
     } catch (error) {
       console.error("Unable to fetch Bangkok time:", error);
       statusElement.textContent = "FetchAPI error: " + error.message;
-      if (!fetchedTime) {
+
+      if (!currentBangkokTime) {
         timeElement.textContent = "--:--:--";
         dateElement.textContent = "Time is currently unavailable.";
       }
     }
   }
 
-  // Fetch the official time once, then update the displayed clock locally.
+  // Fetch the time from the API when the page opens.
   fetchBangkokTime();
 
+  // Advance the fetched time by one second without reloading the page.
   window.setInterval(() => {
-    if (fetchedTime !== null && fetchedAt !== null) {
-      const elapsed = Date.now() - fetchedAt;
-      renderClock(new Date(fetchedTime + elapsed));
+    if (currentBangkokTime) {
+      currentBangkokTime.setSeconds(currentBangkokTime.getSeconds() + 1);
+      renderClock();
     }
   }, 1000);
 
-  // Refresh from the API every five minutes to keep the clock accurate.
+  // Synchronize with the time API again every five minutes.
   window.setInterval(fetchBangkokTime, 5 * 60 * 1000);
 })();
