@@ -8,7 +8,7 @@
 
   if (!cityElement || !timeElement || !dateElement || !statusElement) return;
 
-  const apiUrl = "https://worldtimeapi.org/api/timezone/Asia/Bangkok";
+  const apiUrl = "https://worldtime.timezone.io/api/timezone/Asia/Bangkok";
 
   function displayBangkokTime(isoDateTime) {
     const currentDate = new Date(isoDateTime);
